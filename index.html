@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Te Amo mi Amorcito bello 🌷</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      overflow: hidden;
+      color: gold;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    svg {
+      width: 100%;
+      height: 250px;
+      margin-top: -30px;
+    }
+
+    text {
+      font-size: 24px;
+      fill: gold;
+      text-shadow: 0 0 5px #FFD700, 0 0 10px #FFA500;
+    }
+
+    .heart {
+      font-size: 4em;
+      margin-top: -40px;
+      animation: beat 1s infinite ease-in-out, colorchange 4s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+    }
+
+    @keyframes colorchange {
+      0% { color: #ff66ff; }
+      25% { color: #ff3399; }
+      50% { color: #ff0066; }
+      75% { color: #cc0099; }
+      100% { color: #ff66ff; }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CURVA aún más baja -->
+  <svg viewBox="0 0 500 300">
+    <defs>
+      <path id="curve" d="M 100 260 A 150 100 0 0 1 400 260" />
+    </defs>
+    <text width="500">
+      <textPath href="#curve" startOffset="50%" text-anchor="middle">
+        Te amo mi Amorcito bello 🌷
+      </textPath>
+    </text>
+  </svg>
+
+  <div class="heart">💖</div>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/30/audio_395b8468fa.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
+
